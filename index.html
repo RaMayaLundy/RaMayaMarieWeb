@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>RaMayaMarie - My Personal Page</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #212529;
+    }
+
+    h1, h2 {
+      color: yellow;
+    }
+
+    .highlight {
+      background-color: yellow;
+      color: black;
+    }
+
+    .intro-section {
+      padding: 20px;
+      text-align: center;
+      background-color: #fff3cd;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .hobbies, .career {
+      padding: 30px;
+    }
+
+    .card-img-top {
+      max-height: 200px;
+      object-fit: cover;
+    }
+
+    .emoji {
+      font-size: 2rem;
+    }
+
+    .interactive-button {
+      background-color: yellow;
+      border: none;
+      padding: 10px 20px;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .interactive-button:hover {
+      background-color: #ffd700;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Intro Section -->
+    <div class="intro-section">
+      <h1>Welcome to RaMayaMarie's Personal Page! 🌸</h1>
+      <p>Hi there! My name is RaMayaMarie. I'm passionate about cheerleading, dancing, and exploring new things. I also have a deep love for coding and I'm learning something new every day. 🌟</p>
+    </div>
+
+    <!-- Hobbies Section -->
+    <div class="hobbies">
+      <h2>My Hobbies</h2>
+      <ul>
+        <li>Cheerleading 🏆</li>
+        <li>Dance 💃</li>
+        <li>Watching Movies 🎬</li>
+        <li>Being part of YGT Member 💻</li>
+      </ul>
+      <div id="hobbies-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://via.placeholder.com/800x400.png?text=Cheerleading+Image" class="d-block w-100" alt="Cheerleading">
+          </div>
+          <div class="carousel-item">
+            <img src="https://via.placeholder.com/800x400.png?text=Dance+Image" class="d-block w-100" alt="Dance">
+          </div>
+          <div class="carousel-item">
+            <img src="https://via.placeholder.com/800x400.png?text=Movies+Image" class="d-block w-100" alt="Movies">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hobbies-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hobbies-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Career Section -->
+    <div class="career">
+      <h2>Future Career: Travel Nurse 🌸</h2>
+      <p>I'm excited about becoming a travel nurse because I love helping others and exploring new places. It's the perfect blend of my love for healthcare and adventure!</p>
+      <button class="interactive-button" id="careerButton">Learn more about Travel Nursing!</button>
+      <p id="careerInfo" style="display: none;">Travel nurses work in various healthcare settings on temporary contracts, allowing them to gain diverse experiences while seeing the world!</p>
+    </div>
+
+    <!-- Coding Journey Section -->
+    <div class="coding">
+      <h2>My Coding Journey 💻</h2>
+      <p>Currently, I'm learning coding through a class called YGT. Every day, I get more excited about learning new things and creating with code.</p>
+      <p>I'm using HTML, CSS, and JavaScript to build my skills. Check out some interactive elements I've added to my personal page.</p>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap and JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+  <!-- Custom JavaScript -->
+  <script>
+    // JavaScript for interactive button in Career Section
+    document.getElementById("careerButton").addEventListener("click", function() {
+      var info = document.getElementById("careerInfo");
+      if (info.style.display === "none") {
+        info.style.display = "block";
+      } else {
+        info.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>
